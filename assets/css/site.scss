@@ -1,0 +1,129 @@
+---
+---
+@import 'variables';
+
+* { box-sizing: border-box; }
+
+body {
+  background: $grey-dark;
+  color: $grey-medium;
+  font-size: 16px;
+}
+
+img.responsive {
+  width: 100%;
+}
+
+/*****************************************************
+Primary Header
+*****************************************************/
+
+header[role="main"] {
+  padding: $default-padding;
+  text-align: center;
+  
+  h1 {
+    color: $grey-blue;
+    text-transform: lowercase;
+    font-weight: 200;
+    margin: 0;
+    
+    span {
+      text-transform: uppercase;
+    }
+  }
+  
+  h2 {
+    color: $gold;
+    font-family: script;
+    font-weight: normal;
+    font-size: 1.125rem;
+    font-style: italic;
+    margin: 0;
+  }
+}
+
+/*****************************************************
+Primary Content
+*****************************************************/
+
+#primary-content {
+  background: $white;
+  overflow: auto;
+}
+
+/*****************************************************
+Main Article
+*****************************************************/
+
+article[role='main'] {
+  background: $grey-blue;
+  color: $white;
+  padding: 0;
+  
+  div {
+    padding: $default-padding;
+  }
+}
+
+/*****************************************************
+Primary Footer
+*****************************************************/
+
+footer[role='main'] {
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  
+  > .wrapper {
+    margin: 0 auto;
+  }
+  
+  a, a:visited, a:hover, a:active {
+    color: $white;
+  }
+  
+  div {
+    padding: $default-padding;
+    
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    
+    ul li {
+      padding: 8px 0;
+    }
+    
+    h3 {
+      background: $white;
+      border-radius: 1px;
+      color: $white;
+      font-weight: normal;
+      padding: 8px;
+    }
+  }
+  
+  .links { background-color: $blue; }
+  .categories { background-color: $green; }
+  .contact { background-color: $pink; }
+}
+
+/*****************************************************
+Articles
+*****************************************************/
+
+article {
+  padding: 0 $default-padding $default-padding;
+  
+  &:first-child:not([role="main"]) {
+    padding-top: $default-padding;
+  }
+}
+
+.byline {
+  font-size: 0.765rem;
+  font-style: italic;
+}
