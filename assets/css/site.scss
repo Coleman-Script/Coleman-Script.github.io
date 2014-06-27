@@ -127,3 +127,40 @@ article {
   font-size: 0.765rem;
   font-style: italic;
 }
+
+
+
+/*****************************************************
+Embelishments
+*****************************************************/
+
+/* Tooltip overlay for links */
+a[href^='http://'] {
+  position: relative;
+  
+  &:before {
+    content: attr(href);
+    background: $white;
+    border: 1px solid $grey-medium;
+    border-radius: 2px;
+    color: $grey-dark;
+    display: block;
+    opacity: 0;
+    padding: 4px;
+    pointer-events: auto;
+    position: absolute;
+    top: -4px; left: -4px;
+    
+    -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  	transition: opacity 0.3s, transform 0.3s;
+  	-webkit-transform: scale(0.5);
+  	transform: scale(0.5);
+  }
+  
+  &:hover::before,
+  &:focus::before {
+    opacity: 1;
+  	-webkit-transform: scale(1);
+  	transform: scale(1);
+  }
+}
