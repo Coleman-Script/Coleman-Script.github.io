@@ -1,72 +1,31 @@
 ---
 layout: default
 ---
+{% for post in site.posts limit:1 %}
 <article role="main">
-  <img src="assets/images/main1.jpg" alt="Main1" class='responsive'>
+  <img src="assets/images/{{ post.cover-image }}" alt="Main1" class='responsive'>
   <div>
-    <h1>2013 May Pinning Ceremony</h1>
+    <h1><a href='{{ post.url }}'>{{ post.title }}</a></h1>
     <p class='byline'>
-      22 May 2013 - B. Waddle
+      {{ post.date | date: "%-d %b %Y" }} - {{ post.author }}
     </p>
     <p class='intro'>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+      {{ post.excerpt }}
     </p>
   </div>
 </article>
+{% endfor %}
 
 <div class='recent'>
+  {% for post in site.posts offset: 1 %}
   <article>
-    <h1>The Truth About HCG</h1>
+    <h1><a href='{{ post.url }}'>{{ post.title }}</a></h1>
     <p class='byline'>
-      22 May 2013 - A. Shah
+      {{ post.date | date: "%-d %b %Y" }} - {{ post.author }}
     </p>
     <p class='intro'>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+      {{ post.excerpt }} 
     </p>
   </article>
-  
-  <article>
-    <h1>Going Digital: Apps You Need</h1>
-    <p class='byline'>
-      22 May 2013 - T. Schmidt
-    </p>
-    <p class='intro'>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-    </p>
-  </article>
-  
-  <article>
-    <h1>2013 May Pinning Ceremony</h1>
-    <p class='byline'>
-      22 May 2013 - B. Waddle
-    </p>
-    <p class='intro'>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-    </p>
-  </article>
-  
-  <article>
-    <h1>2013 May Pinning Ceremony</h1>
-    <p class='byline'>
-      22 May 2013 - B. Waddle
-    </p>
-    <p class='intro'>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-      exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-      dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-    </p>
-  </article>
+  {% endfor %}
 </div>

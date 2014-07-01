@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang='en'>
+  {% include document_head.html %}
+  <body id='post'>
+    {% include post_head.html %}
+    <div id="primary-content">
+      <div class='scrollpast'>
+        <img src='/assets/images/{{ page.cover-image }}' class='responsive'>
+      </div>
+      <article>
+        <header>
+          <h1>{{ page.title }}</h1>
+          <p class='byline'>written by {{ page.author }} on {{ page.date | date: "%b %-d, %Y" }}</p>
+        </header>
+        {{ content }}
+      </article>
+    </div>
+    {% include primary_footer.html %}
+  </body>
+</html>

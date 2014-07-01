@@ -14,6 +14,30 @@ img.responsive {
   width: 100%;
 }
 
+p {
+  line-height: 1.35;
+}
+
+
+/*****************************************************
+Links
+*****************************************************/
+
+h1 a {
+  color: $blue;
+  text-decoration: none;
+  
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+article[role='main'] h1 a {
+  color: $white;
+}
+
+
+
 /*****************************************************
 Primary Header
 *****************************************************/
@@ -40,6 +64,16 @@ header[role="main"] {
     font-size: 1.125rem;
     font-style: italic;
     margin: 0;
+  }
+}
+
+#post header[role="main"] {
+  background: rgba(255, 255, 255, 0.6);
+  border-bottom: 1px solid silver;
+  text-align: left;
+  
+  h1 {
+    font-size: 1.25rem;
   }
 }
 
@@ -126,6 +160,36 @@ article {
 .byline {
   font-size: 0.765rem;
   font-style: italic;
+}
+
+#post article {
+  padding-top: 0;
+  
+  header {
+    text-align: center;
+    margin-bottom: $gutter * 2;
+    
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0;
+    }
+  }
+  
+  > p:first-of-type {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    padding-bottom: $gutter;
+  }
+}
+
+#post #primary-content {
+  margin-top: 30vw;
+}
+
+.scrollpast {
+  position: absolute; top: 0; left: 0;
+  width: 100%;
+  z-index: -1;
 }
 
 
