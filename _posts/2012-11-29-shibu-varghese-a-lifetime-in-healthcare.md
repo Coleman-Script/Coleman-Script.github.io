@@ -3,6 +3,7 @@ author: Brian Waddle
 title: Shibu Varghese&#58; A Lifetime in Healthcare
 category: alumni-voice
 cover-image: shibu-cover-image.jpg
+layout: post
 ---
 My mother came to the United States from India as an internationally-recruited nurse and settled in Houston. I was just eight years old. She introduced the healthcare industry to our family. Both my sister and brother ventured in healthcare also, and I began an affinity towards healthcare but was not sure what to do. Many counselors and mentors in my life at the time mentioned HCC and told me to review the career catalog. I flipped the pages and found several healthcare professions that I was interested in.  
 

@@ -3,6 +3,7 @@ author: Abha Shah
 title: 5-hour Energy&#58; The Magic Behind Late Night Studying
 category: everyday-health
 cover-image: 5hour-cover-image.jpg
+layout: post
 ---
 We live in a fast-paced world, where time is money and everyone is busy chasing ambitions at work, at school, and everywhere in-between. The need to keep up with our constantly changing world has made way for energy boosting shots, which has become a new trend among people of all ages. College students burning the midnight oil, people working around the clock, and some athletes have all made energy shots the choice to get a quick boost, stay awake, alert, and concentrate as energy shots have fewer calories and less sugar compared to full-size energy drinks. One of the most popular is 5-Hour Energy, but what does it do to our bodies and what is the effect on them?
 
