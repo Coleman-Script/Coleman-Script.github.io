@@ -71,6 +71,9 @@ header[role="main"] {
   background: rgba(255, 255, 255, 0.6);
   border-bottom: 1px solid silver;
   text-align: left;
+  position: absolute; top: 0; left: 0;
+  width: 100%;
+  z-index: 999;
   
   h1 {
     font-size: 1.25rem;
@@ -182,14 +185,9 @@ article {
   }
 }
 
-#post #primary-content {
-  margin-top: 30vw;
-}
-
 .scrollpast {
-  position: absolute; top: 0; left: 0;
-  width: 100%;
-  z-index: -1;
+  height: 40vw;
+  overflow: hidden;
 }
 
 
